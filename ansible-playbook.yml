@@ -13,4 +13,4 @@
     command : sudo systemctl start docker
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8081 dutt1/primg:v1.2
+    command: docker run -itd -p 8086:8081 dutt1/primg:v1.3
