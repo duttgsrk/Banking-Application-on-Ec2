@@ -4,41 +4,6 @@ provider "aws" {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-resource "aws_route_table" "rt" {
-  vpc_id = "vpc-0d17ff101a1d73170"
-
-  route {
-    cidr_block = "0.0.0.0/0"
-    gateway_id = "igw-0491d67d1d7d88a04"
-  }
-
-  tags = {
-    Name = "rt"
-  }
-}
-
-
-
-resource "aws_route_table_association" "rta" {
-  subnet_id      = "subnet-07289ec292e705287"
-  route_table_id = aws_route_table.rt.id
-}
-
-
-
 resource "aws_security_group" "sg" {
   name        = "sg"
   description = "Allow inbound traffic"
