@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 
-resource "aws_security_group" "sg2" {
+resource "aws_security_group" "sg3" {
   name        = "sg"
   description = "Allow inbound traffic"
   vpc_id      = "vpc-0d17ff101a1d73170"
