@@ -45,7 +45,7 @@ resource "aws_instance" "ec" {
   instance_type               = "t2.micro"
   associate_public_ip_address = true
   subnet_id                   = "subnet-07289ec292e705287"
-  vpc_security_group_ids      = [aws_security_group.sg.id]
+  vpc_security_group_ids      = [aws_security_group.sg3.id]
   key_name                    = "KP1805"
 
   user_data = <<-EOF
