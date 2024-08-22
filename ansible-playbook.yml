@@ -13,4 +13,4 @@
     command : sudo systemctl start docker
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8086:8081 dutt1/22ap:${BUILD_NUMBER}
+    command: docker run -itd -p 8086:8081 dutt1/22ap:V1
